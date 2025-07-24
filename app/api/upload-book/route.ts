@@ -27,7 +27,7 @@ export async function POST(req: Request) {
         instalments_count: book.instalments.length,
       },
     ], {
-      onConflict: ['slug'],
+      onConflict: 'slug',
     })
     .select()
     
