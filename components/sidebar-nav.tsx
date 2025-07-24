@@ -46,10 +46,10 @@ export function DocsSidebarNavItems({
             key={index}
             href={item.href}
             className={cn(
-              "flex w-full items-center rounded-md p-2 hover:underline",
-              {
-                "bg-muted": pathname === item.href,
-              }
+              "flex w-full items-center rounded-md p-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors",
+             {
+               "bg-gray-200 dark:bg-gray-900 font-medium": pathname === item.href,
+             }
             )}
             target={item.external ? "_blank" : ""}
             rel={item.external ? "noreferrer" : ""}
